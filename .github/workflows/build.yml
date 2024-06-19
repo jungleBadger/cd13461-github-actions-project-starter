@@ -42,7 +42,7 @@ jobs:
       - name: Run scripts in script directory
         run: |
           URL_CHECKER_TIMEOUT=30
-          for script in script/*; do
+          for script in script/*.js; do
             node "$script" -t $URL_CHECKER_TIMEOUT
           done
 
