@@ -102,7 +102,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          publish_dir: _site
       - name: Create deployment summary issue
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
